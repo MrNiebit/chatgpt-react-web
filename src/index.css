@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 添加到你的 CSS 文件中 */
+.markdown-content {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.markdown-content h1 {
+  font-size: 1.5em;
+}
+
+.markdown-content h2 {
+  font-size: 1.3em;
+}
+
+.markdown-content h3 {
+  font-size: 1.2em;
+}
+
+.markdown-content p {
+  margin-bottom: 8px;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.markdown-content li {
+  margin-bottom: 4px;
+}
+
+.markdown-content pre {
+  background-color: #f6f8fa;
+  border-radius: 4px;
+  padding: 12px;
+  overflow-x: auto;
+  margin-bottom: 8px;
+}
+
+.markdown-content code {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  padding: 2px 4px;
+  font-family: monospace;
+}
+
+.markdown-content blockquote {
+  border-left: 4px solid #dfe2e5;
+  padding-left: 16px;
+  color: #6a737d;
+  margin-bottom: 8px;
+}
+
+.markdown-content a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-content a:hover {
+  text-decoration: underline;
+}
+
+.markdown-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.markdown-content table th,
+.markdown-content table td {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-content table th {
+  background-color: #f6f8fa;
+}
+
+/* 添加暗黑模式样式 */
+.dark {
+  --bg-primary: #1f1f1f;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --border-color: #3a3a3a;
+}
+
+html.dark body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+html.dark .ant-typography {
+  color: var(--text-primary);
+}
+
+html.dark .bg-white {
+  background-color: var(--bg-secondary);
+}
+
+html.dark .bg-blue-50 {
+  background-color: #1a2234;
+}
+
+html.dark .border-gray-200 {
+  border-color: var(--border-color);
+}
+
+html.dark .text-gray-800 {
+  color: var(--text-primary);
+}
+
+html.dark .text-gray-500 {
+  color: var(--text-secondary);
+}
